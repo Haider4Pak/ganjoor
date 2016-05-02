@@ -51,8 +51,7 @@ h1 a img {
 #fa {
     direction: rtl;
     font: 12px/1.5 tahoma;
-    background: transparent url(http://ganjoor.net/img/bk.gif) repeat scroll 0%;
-    background-position: top center;
+    background: transparent url(http://ganjoor.net/img/bk.gif) top center repeat scroll;
 }
 
 #fa a {
@@ -62,11 +61,8 @@ h1 a img {
 
 h2 {
     font: bold 24px/1.5 Times New Roman;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 3px auto;
     width: 252px;
-    margin-left: auto;
-    margin-right: auto;
     color: #300
 }
 
@@ -104,8 +100,7 @@ form:after, form div:after {
 }
 
 .poem, #guides, .sitem {
-    background: transparent url(http://ganjoor.net/img/pbk.jpg) repeat scroll 0%;
-    background-position: top center;
+    background: transparent url(http://ganjoor.net/img/pbk.jpg) top center repeat scroll;
 }
 
 .sitem, .poem {
@@ -147,7 +142,7 @@ form:after, form div:after {
 
 form {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-size: 100%;
     min-width: 300px;
     max-width: 620px
@@ -253,15 +248,13 @@ div.spacer, .item, .b2 {
 
 .navleft {
     float: left;
-    text-align: left;
-    padding: 0px 0px 5px 5px;
+    padding: 0 0 5px 5px;
     text-align: center
 }
 
 .navright {
     float: right;
-    text-align: right;
-    padding: 0px 0px 5px 5px;
+    padding: 0 0 5px 5px;
     text-align: center
 }
 
@@ -313,12 +306,9 @@ div.spacer, .item, .b2 {
 
 #comments {
     width: 530px;
-    margin: auto;
+    margin: 20px auto 6px;
     display: block;
-    background: transparent url(http://ganjoor.net/img/cbk.jpg) repeat scroll 0%;
-    background-position: top center;
-    margin-top: 20px;
-    margin-bottom: 6px;
+    background: transparent url(http://ganjoor.net/img/cbk.jpg) top center repeat scroll;
     padding: 3px;
     clear: both;
     border: 2px solid #300;
@@ -326,11 +316,9 @@ div.spacer, .item, .b2 {
 
 .notice {
     width: 90%;
-    margin: auto;
+    margin: 6px auto;
     display: block;
     background-color: #ffffe1;
-    margin-top: 6px;
-    margin-bottom: 6px;
     padding: 3px;
     clear: both;
     border: 2px solid #300;
@@ -342,9 +330,7 @@ div.spacer, .item, .b2 {
 
 #commentsp h3, #comments h3 {
     font: bold 24px/1.5 Times New Roman;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin: auto;
+    margin: 3px auto;
     color: #fff;
     text-align: center;
 }
@@ -380,7 +366,7 @@ form fieldset {
 form fieldset legend {
     font-weight: normal;
     color: #300;
-    margin: 0px;
+    margin: 0;
     padding: 0 5px
 }
 
@@ -389,7 +375,7 @@ textarea {
 }
 
 form fieldset div.notes p.last {
-    margin: 0em
+    margin: 0;
 }
 
 form div.required label, label.required {
@@ -406,7 +392,7 @@ form div label {
     float: right;
     width: 120px;
     padding: 3px 5px;
-    margin: 0px 0px 5px 0px;
+    margin: 0 0 5px 0;
     text-align: left
 }
 
@@ -426,11 +412,11 @@ form div fieldset {
     display: block;
     clear: none;
     border: 2px solid #300;
-    padding: 0px 5px 5px 0px
+    padding: 0 5px 5px 0;
 }
 
 form div fieldset legend {
-    padding: 0px 3px 0px 9px
+    padding: 0 3px 0 9px;
 }
 
 form div.submit {
