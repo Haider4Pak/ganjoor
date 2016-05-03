@@ -3,11 +3,12 @@
 
 <head profile="http://gmpg.org/xfn/11">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>گنجور &raquo; مولوی &raquo; دیوان شمس &raquo; غزلیات &raquo; غزل شمارهٔ ۶۳۳</title>
     <meta name="generator" content="WordPress" />
     <meta http-equiv="Content-Language" content="fa" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="http://i.ganjoor.net/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <link href="jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="http://ganjoor.net/favicon.ico" type="image/x-icon" />
     <link rel="search" type="application/opensearchdescription+xml" title="گنجور" href="http://ganjoor.net/search.xml" />
     <script type='text/javascript'>
@@ -22,86 +23,83 @@
 
 <body>
 
-<div id="hdr2">
+<div id="hdr2" class="clearfix">
     <h1>
         <a href="http://ganjoor.net" title="گنجور">
-            <img src="http://ganjoor.net/img/ganjadabk.gif" alt="گنجور" />
+            <img src="img/ganjadabk.gif" alt="گنجور" />
         </a>
     </h1>
     <div class="actionbox">
         <form action="http://ganjoor.net/index.php" method="get" id="searchform">
-            <label for="s">جستجو:</label>
-            <input type="text" name="s" id="s" class="inputText" size="50" value="" />
-            <div style="display:block;width:auto;float:left;margin-left:47px">
-                <select name="author" id="author">
-                    <option value="0">در آثار همه شاعران</option>
-                    <option value="57">ابن حسام خوسفی</option>
-                    <option value="26">ابوسعید ابوالخیر</option>
-                    <option value="52">اسدی توسی</option>
-                    <option value="42">اقبال لاهوری</option>
-                    <option value="34">امیرخسرو دهلوی</option>
-                    <option value="18">انوری</option>
-                    <option value="19">اوحدی</option>
-                    <option value="56">باباافضل کاشانی</option>
-                    <option value="28">باباطاهر</option>
-                    <option value="43">بیدل دهلوی</option>
-                    <option value="24">جامی</option>
-                    <option value="2">حافظ</option>
-                    <option value="16">خاقانی</option>
-                    <option value="48">خلیل‌الله خلیلی</option>
-                    <option value="20">خواجوی کرمانی</option>
-                    <option value="3">خیام</option>
-                    <option value="36">رشحه</option>
-                    <option value="47">رضی‌الدین آرتیمانی</option>
-                    <option value="41">رهی معیری</option>
-                    <option value="12">رودکی</option>
-                    <option value="7">سعدی</option>
-                    <option value="40">سلمان ساوجی</option>
-                    <option value="10">سنایی</option>
-                    <option value="31">سیف فرغانی</option>
-                    <option value="55">شاطرعباس صبوحی</option>
-                    <option value="51">شاه نعمت‌الله ولی</option>
-                    <option value="35">شهریار</option>
-                    <option value="30">شیخ بهایی</option>
-                    <option value="23">شیخ محمود شبستری</option>
-                    <option value="22">صائب تبریزی</option>
-                    <option value="37">عبدالواسع جبلی</option>
-                    <option value="33">عبید زاکانی</option>
-                    <option value="21">عراقی</option>
-                    <option value="46">عرفی</option>
-                    <option value="9">عطار</option>
-                    <option value="38">فخرالدین اسعد گرگانی</option>
-                    <option value="15">فرخی سیستانی</option>
-                    <option value="4">فردوسی</option>
-                    <option value="32">فروغی بسطامی</option>
-                    <option value="39">فیض کاشانی</option>
-                    <option value="44">قاآنی</option>
-                    <option value="29">محتشم کاشانی</option>
-                    <option value="17">مسعود سعد سلمان</option>
-                    <option value="27">ملک‌الشعرای بهار</option>
-                    <option value="14">منوچهری</option>
-                    <option value="54">مهستی گنجوی</option>
-                    <option value="5"  selected="selected">مولوی</option>
-                    <option value="13">ناصرخسرو</option>
-                    <option value="49">نصرالله منشی</option>
-                    <option value="6">نظامی</option>
-                    <option value="25">هاتف اصفهانی</option>
-                    <option value="53">هجویری</option>
-                    <option value="50">هلالی جغتایی</option>
-                    <option value="11">وحشی</option>
-                    <option value="8">پروین اعتصامی</option>
-                    <option value="45">کسایی</option>
-                </select>
-                <select name="cat" id="cat" style="width:150px">
-                    <option value="0">در همه بخشها</option>
-                    <option value="98">دیوان شمس</option>
-                    <option value="99"  selected="selected">غزلیات</option>
-                    <option value="100">مستدرکات</option>
-                    <option value="101">ترجیعات</option>
-                    <option value="102">رباعیات</option>
-                </select>
-                <input type="submit" value="بیاب" />
-            </div>
+            <input type="text" name="s" id="s" class="inputText" value="" placeholder="جستجو" />
+            <select name="author" id="author">
+                <option value="0">در آثار همه شاعران</option>
+                <option value="57">ابن حسام خوسفی</option>
+                <option value="26">ابوسعید ابوالخیر</option>
+                <option value="52">اسدی توسی</option>
+                <option value="42">اقبال لاهوری</option>
+                <option value="34">امیرخسرو دهلوی</option>
+                <option value="18">انوری</option>
+                <option value="19">اوحدی</option>
+                <option value="56">باباافضل کاشانی</option>
+                <option value="28">باباطاهر</option>
+                <option value="43">بیدل دهلوی</option>
+                <option value="24">جامی</option>
+                <option value="2">حافظ</option>
+                <option value="16">خاقانی</option>
+                <option value="48">خلیل‌الله خلیلی</option>
+                <option value="20">خواجوی کرمانی</option>
+                <option value="3">خیام</option>
+                <option value="36">رشحه</option>
+                <option value="47">رضی‌الدین آرتیمانی</option>
+                <option value="41">رهی معیری</option>
+                <option value="12">رودکی</option>
+                <option value="7">سعدی</option>
+                <option value="40">سلمان ساوجی</option>
+                <option value="10">سنایی</option>
+                <option value="31">سیف فرغانی</option>
+                <option value="55">شاطرعباس صبوحی</option>
+                <option value="51">شاه نعمت‌الله ولی</option>
+                <option value="35">شهریار</option>
+                <option value="30">شیخ بهایی</option>
+                <option value="23">شیخ محمود شبستری</option>
+                <option value="22">صائب تبریزی</option>
+                <option value="37">عبدالواسع جبلی</option>
+                <option value="33">عبید زاکانی</option>
+                <option value="21">عراقی</option>
+                <option value="46">عرفی</option>
+                <option value="9">عطار</option>
+                <option value="38">فخرالدین اسعد گرگانی</option>
+                <option value="15">فرخی سیستانی</option>
+                <option value="4">فردوسی</option>
+                <option value="32">فروغی بسطامی</option>
+                <option value="39">فیض کاشانی</option>
+                <option value="44">قاآنی</option>
+                <option value="29">محتشم کاشانی</option>
+                <option value="17">مسعود سعد سلمان</option>
+                <option value="27">ملک‌الشعرای بهار</option>
+                <option value="14">منوچهری</option>
+                <option value="54">مهستی گنجوی</option>
+                <option value="5"  selected="selected">مولوی</option>
+                <option value="13">ناصرخسرو</option>
+                <option value="49">نصرالله منشی</option>
+                <option value="6">نظامی</option>
+                <option value="25">هاتف اصفهانی</option>
+                <option value="53">هجویری</option>
+                <option value="50">هلالی جغتایی</option>
+                <option value="11">وحشی</option>
+                <option value="8">پروین اعتصامی</option>
+                <option value="45">کسایی</option>
+            </select>
+            <select name="cat" id="cat" style="width:150px">
+                <option value="0">در همه بخشها</option>
+                <option value="98">دیوان شمس</option>
+                <option value="99"  selected="selected">غزلیات</option>
+                <option value="100">مستدرکات</option>
+                <option value="101">ترجیعات</option>
+                <option value="102">رباعیات</option>
+            </select>
+            <input type="submit" value="بیاب" />
         </form>
     </div><!-- .actionbox -->
 </div><!-- #hdr2 -->
@@ -116,13 +114,13 @@
 
             <div class="spacer">&nbsp;</div>
 
-            <div style="width:82px;margin:auto">
+            <div class="poet-pic-wrap">
                 <a href="http://ganjoor.net/moulavi/">
-                    <img src="http://i.ganjoor.net/moulavi.gif" alt="مولوی" />
+                    <img src="img/moulavi.gif" alt="مولوی" />
                 </a>
             </div>
 
-            <div style="width:100%;margin:auto">
+            <div class="breadcrumb">
                 <a href="http://ganjoor.net/moulavi/">مولوی</a> &raquo;
                 <a href="http://ganjoor.net/moulavi/shams/">دیوان شمس</a> &raquo;
                 <a href="http://ganjoor.net/moulavi/shams/ghazalsh/">غزلیات</a>
@@ -342,7 +340,7 @@
             <div class="spacer"></div>
 
             <div style="width:350px;margin:auto">
-                <a href="https://telegram.me/GanjoorOfficial"><img src="http://i.ganjoor.net/ads/telganj.jpg" width="350px" alt="کانال رسمی گنجور در تلگرام" /></a>
+                <a href="https://telegram.me/GanjoorOfficial"><img src="img/telganj.jpg" width="350px" alt="کانال رسمی گنجور در تلگرام" /></a>
             </div>
 
         </div><!-- .poem -->
@@ -374,31 +372,6 @@
         </ul>
     </div>
 </div>
-
-<script type="text/javascript" language="JavaScript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" language="JavaScript" src="http://i.ganjoor.net/js/b3.js"></script>
-<script type="text/javascript" language="JavaScript" src="http://i.ganjoor.net/js/vaab.js"></script>
-
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-
-<script type="text/javascript">
-    var pageTracker = _gat._getTracker("UA-63626-7");
-    pageTracker._initData();
-    pageTracker._trackPageview();
-</script>
-
-<!-- Start Quantcast tag -->
-<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-
-<script type="text/javascript">_qacct="p-f8Wx39FgUobjg";quantserve();</script>
-
-<noscript>
-    <a href="http://www.quantcast.com/p-f8Wx39FgUobjg" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-f8Wx39FgUobjg.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
-</noscript>
-<!-- End Quantcast tag -->
 
 </body>
 </html>

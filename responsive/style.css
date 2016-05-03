@@ -7,7 +7,8 @@ Author:gozir.com
 */
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 #hdr, #hdr2 {
-    width: 752px;
+    max-width: 752px;
     margin: auto;
     display: block;
     text-align: center;
@@ -27,20 +28,18 @@ body {
 }
 
 #hdr2 {
-    height: 100px;
     margin-bottom: 3px;
 }
 
 h1 {
     text-align: center;
-    width: 252px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #hdr2 h1 {
-    width: 90px;
     float: right;
+    height: 100px;
 }
 
 h1 a img {
@@ -62,7 +61,6 @@ h1 a img {
 h2 {
     font: bold 24px/1.5 Times New Roman;
     margin: 3px auto;
-    width: 252px;
     color: #300
 }
 
@@ -76,23 +74,19 @@ form:after, form div:after {
 
 .actionbox {
     position: relative;
-    width: 610px;
     margin: auto;
     line-height: normal;
-    height: 27px;
-    margin-top: 3px;
     text-align: center
 }
 
 #hdr2 .actionbox {
     margin: 0;
-    margin-top: 36px;
     float: left;
     font: 12px/1.5 tahoma
 }
 
 #main, .sitem, .poem {
-    width: 752px;
+    max-width: 752px;
     margin: auto;
     display: block;
     background-color: #fc9;
@@ -108,17 +102,13 @@ form:after, form div:after {
     padding: 3px;
 }
 
-.poem, .sitem {
-    width: 650px
-}
-
 .poem p {
     text-indent: 20px;
     text-align: justify;
 }
 
 #footer {
-    width: 752px;
+    max-width: 752px;
     margin: auto;
     text-align: center;
     height: 30px;
@@ -144,8 +134,6 @@ form {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    min-width: 300px;
-    max-width: 620px
 }
 
 label {
@@ -259,7 +247,6 @@ div.spacer, .item, .b2 {
 }
 
 .b {
-    width: 630px;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
@@ -301,11 +288,10 @@ div.spacer, .item, .b2 {
 .sit {
     display: block;
     float: right;
-    width: 508px
+    max-width: 508px
 }
 
 #comments {
-    width: 530px;
     margin: 20px auto 6px;
     display: block;
     background: transparent url(http://ganjoor.net/img/cbk.jpg) top center repeat scroll;
@@ -437,7 +423,7 @@ form div input.inputSubmit {
 table {
     font: 12px/1.5 tahoma;
     border-collapse: collapse;
-    width: 600px;
+    max-width: 600px;
     margin: auto;
     margin-top: 10px;
     text-align: center;
@@ -478,7 +464,7 @@ ol {
 }
 
 #selection-image {
-    background: url('http://i.ganjoor.net/loghatname.png') 0 0 no-repeat;
+    background: url('img/loghatname.png') 0 0 no-repeat;
     width: 25px;
     height: 29px;
     position: absolute;
@@ -487,10 +473,52 @@ ol {
 }
 
 #vajje {
-    background: url('http://i.ganjoor.net/vajje.png') 0 0 no-repeat;
+    background: url('img/vajje.png') 0 0 no-repeat;
     width: 25px;
     height: 29px;
     position: absolute;
     top: 20px;
     left: -50px;
+}
+
+.poet-pic-wrap {
+    width:82px;
+    margin:auto;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#searchform {
+    float: left;
+    max-width: 150px;
+}
+#searchform input,
+#searchform select {
+    width: 150px;
+    margin: 3px 0;
+    padding: 4px;
+    float: left;
+    height: 25px;
+}
+
+
+@media(max-width: 768px) {
+    .b {
+        margin-bottom: 15px;
+    }
+    .b p {
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .b > div {
+        width: 100%;
+        float: none;
+    }
 }
